@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event bubbling</title>
+    <style>
+        .event-bubbling *, 
+        .event-bubbling2 * {
+            margin: 8px;
+            padding: 8px;
+            background: #fff;
+            border: 2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="event-bubbling">
+        <form onclick="alert('form');">FORM
+            <div onclick="alert('div')">DIV
+                <p onclick="alert('p'); event.stopPropagation();">P</p>
+            </div>
+        </form>
+    </div>
+
+    <div class="event-bubbling2">
+        <form onclick="alert('form')">FORM
+            <div>DIV
+                <p >P</p>
+            </div>
+        </form>
+    </div>
+    <script>
+        // event target : 실제 이벤트가 시작된 타켓 요소
+        // this (event.currentTarget) : 핸들러가 할당된 요소
+        const form = document.querySelector(".event-bubbling2 form");
+        form.addEventListener("click", function (event) {
+        console.log(event.target + "/" + event.currentTarget + "/" + this);
+        event.target.style.backgroundColor = "yellow";
+
+        setTimeout(() => {
+            alert(`target = ${event.target.tagName} , this = ${this.tagName}`);
+        }, 0);
+        });
+    </script>
+</body>
+</html>

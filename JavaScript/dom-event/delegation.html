@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event delegation</title>
+</head>
+<body>
+    <div id="buttonList">
+        <button class="buttonClass">Click me</button>
+        <button class="buttonClass">Click me</button>
+    </div>
+
+    <div id="buttonList2">
+        <button class="buttonClass2">Click me2</button>
+        <button class="buttonClass2">Click me2</button>
+    </div>
+    <script>
+        // 새로 추가된 버튼은 click이벤트 안먹힘
+        const buttonList = document.querySelector('#buttonList')
+        const buttons = document.getElementsByClassName("buttonClass")
+        for(const button of buttons) {
+            button.addEventListener("click", () => alert("clicked"))
+        }
+        const button = document.createElement("button")
+        button.setAttribute("class","buttonClass")
+        button.innerText="Click me"
+        buttonList.appendChild(button)
+        
+        // 하위요소의 이벤트를 상위에 걸어 이벤트 버블링이 일어나도록
+        const buttonList2 = document.querySelector('#buttonList2')
+        buttonList2.addEventListener("click", (e) => {
+            if(e.target.classList.contains("buttonClass2")) alert("clicked")
+        })
+        const button2 = document.createElement("button")
+        button2.setAttribute("class","buttonClass2")
+        button2.innerText="Click me2"
+        buttonList2.appendChild(button2)
+        
+    </script>
+</body>
+</html>
