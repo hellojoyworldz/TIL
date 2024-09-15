@@ -5,14 +5,15 @@ function funcDec() {
 }
 
 // 함수 표현식
+console.log(funcExp); // undefined
 funcExp(); //  funcExp is not a function
-let funcExp = function () {
+var funcExp = function () {
   console.log("Function Expression");
 };
 funcExp(); // "Function Expression"
 
 // 화살표 힘수
 funcArr(); //  funcArr is not a function
-var funcArr = () => {
+let funcArr = () => {
   console.log("Function Arrow");
 };
