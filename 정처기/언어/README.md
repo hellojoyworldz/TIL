@@ -5,12 +5,12 @@ C언어와 Java는 main 부터 시작
 #  1.  출력
 큰 따옴표 안에 `\n`이 있는 경우는 개행(줄바꿈)
 ## C언어
-**printf("%d", 10진수)**
-**printf("%f", 실수형)**
-printf("%o", 8진수)
-printf("%x", 16진수)
-**printf("%c", 문자)**
-**printf("%s", 문자열)**
+**printf("%d", 10진수)**. 
+**printf("%f", 실수형)**. 
+printf("%o", 8진수). 
+printf("%x", 16진수). 
+**printf("%c", 문자)**. 
+**printf("%s", 문자열)**. 
 
 > c언어는`\n` 로 개행을 한다
 
@@ -287,3 +287,135 @@ int main(){
 	}
 }
 ```
+
+## 5. 비교연산자와 반복문+조건문 문제풀이
+
+### Q1.
+
+```c
+#include <stdio.h>  
+
+int main() {  
+    int a = 1, b = 1;  
+    int sum = 0;  
+
+	printf("%d%d%d\n", a,b,sum);
+
+    while (a <= 5) {  
+        if (b % 2 == 0) {  
+            sum += b;  
+        } else {  
+            sum -= b;  
+        }  
+        a++;  
+        b += 2;  
+	    printf("%d%d%d\n", a,b,sum);
+    }  
+
+    printf("%d\n", sum);  
+    return 0;  
+}
+```
+
+### Q2
+i가 2의 배수일 때 count_i++ , count_i가 5일 때 value_i=i
+j가 3의 배수일 때 count_j++, count_j가 7일 때 value_j=i
+value_i와 value_j가 0이 아닐 때 빠져나옴
+
+```c
+#include <stdio.h>
+
+int main() {  
+    int i = 1, j = 1;  
+    int count_i = 0, count_j = 0;  
+    int value_i = 0, value_j = 0;  
+
+    while (i <= 50 && j <= 50) {  
+        if (i % 2 == 0) {  
+            count_i++;  
+            if (count_i == 5) {  
+                value_i = i;  
+            }  
+        }  
+        if (j % 3 == 0) {  
+            count_j++;  
+            if (count_j == 7) {  
+                value_j = j;  
+            }  
+        }  
+        if (value_i != 0 && value_j != 0) {  
+            printf("i: %d, j: %d\n", value_i, value_j);  
+            break;  
+        }  
+        i++;  
+        j++;
+
+		printf("%d %d %d %d %d %d\n", i, j, count_i, count_j, value_i, value_j);
+    }  
+}
+```
+
+## 7. 함수(메서드) 선언과 호출
+함수는 특정작업을 수행하기 위해 독립적으로 작성하는 블록 코드
+입력값을 받고 결과값을 반환
+
+정의와 호출: 함수에게 이름을 지어주고 기능을 붙여준다
+입력값(파라미터): 함수에 던저주는 값. 함수(a,b,c)
+리턴값: 함수가 기능을 모두 마치고 돌려주는 반환 값
+
+**c언어 함수**
+- 함수 앞에 리턴값 자료형이 있다
+- main 이라고 적힌 함수부터 코드 시작
+
+**자바 메서드**
+- 메서드 앞에 뭔가 용어가 많다
+- c언어와 같이 리턴값에 대한 자료형이 있다
+- c언어와 같이 main 함수부터 코드가 시작
+- 소문자 함수, class 대문자
+
+**파이썬**
+- 함수를 만들 때 def라는 키워드를 쓴다
+- 자료형에 대한 힌트가 없다
+- 함수 내용은 괄호가 아닌 들여쓰기
+
+
+```python
+def subtract(a,b):
+ return a-b
+
+result = subtract(10,3)
+print("Result:", result)
+
+```
+
+```python
+def square_elements(elements):  
+    squared = [e ** 2 for e in elements]  
+    return squared  
+
+my_list = [1, 2, 3, 4]  
+result = square_elements(my_list)  
+print("Squared List:", result)
+```
+
+## 8. 연산자와 기출문제
+**c언어의 문자열 붙이는 내장함수**
+`strcat(str, " World");`
+
+```c
+#include <stdio.h>  
+#include <string.h>  
+
+int main() {  
+    char str[50] = "Hello";  
+    strcat(str, " World"); // str에 " World"를 연결  
+
+    printf("str = %s\n", str);  
+    return 0;  
+}
+```
+
+**연산자 주의사항**
+- 몫과 나머지 구분하는 것
+- 문자, 문자열은 더하면 붙는다
+- c언어는 내장 기능으로 문자열을 붙인다
