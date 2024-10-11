@@ -289,3 +289,41 @@ int main() {
 
 1. 출력할 때는 %c로 반복하며 출력하거나, %s로 한번에 출력할 수 있다.
 
+# 3. 포인터의 개념과 활용
+c언어는 메모리에 접근할 수 있다.
+`&` (ampersand, 앰퍼샌드) 이 변수의 **메모리 상의 주소**가 무엇이니?  
+`*` (asterisk, 애스터리스크) 그 주소(addr)가 가리키고 있는 값(value)을 가져와라  
+
+c언어에서는 주소를 저장할 수 있는 변수를 포인터 변수라고 부름
+포인터 변수는 변수 앞에 `*` 를 붙여서 만들어주고, 값을 주소로 줘야함
+
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+	int answer1 = 42; //  정수가 들어갈 수 있는 answer 변수에 42 값을 넣어라.
+	int answer2 = answer1;
+	printf("%d\n", answer1); // answer 변수를 “십진수\n” 형태로 출력하라. (%d의 d는 decimal)  
+	printf("%d\n", &answer1);// answer 변수가 저장되어있는 메모리 주소를 출력하라.
+	printf("%d\n", &answer2);
+
+	int n = 42;
+	int *p = &n;
+	printf("%d\n", p);
+	printf("%d\n", &n);
+}
+```
+
+## 포인터 변수
+```c
+#include <stdio.h>
+
+int main(){
+	int n = 50;
+	int *p = &n; // 변수일 때 포인터 변수(주소가 가르키고 있는 값)
+	printf("%d\n", n); 
+	printf("%d\n", *p);// 호출할 때 주소의 내용물(실제 값 )
+}
+```
