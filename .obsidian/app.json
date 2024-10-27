@@ -2,10 +2,11 @@
   "showLineNumber": true,
   "newFileLocation": "current",
   "trashOption": "local",
-  "attachmentFolderPath": "./",
+  "attachmentFolderPath": "./images",
   "readableLineLength": false,
   "newLinkFormat": "relative",
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": false,
-  "strictLineBreaks": true
+  "strictLineBreaks": true,
+  "useMarkdownLinks": true
 }
