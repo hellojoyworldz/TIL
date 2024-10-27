@@ -1,0 +1,196 @@
+{
+  "main": {
+    "id": "0eb3b7bccf8800f4",
+    "type": "split",
+    "children": [
+      {
+        "id": "5d86ac734e97a8fe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aad2d513f31abe32",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "네트워크/README.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "33ea114c0dcae033",
+    "type": "split",
+    "children": [
+      {
+        "id": "0cf00967b8263f20",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "92a81693f3970d33",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ff8f046d8d68bf68",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#네트워크",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "921259776576d098",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "5ea8cc79a0f49754",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 222.5
+  },
+  "right": {
+    "id": "b6546217fabe601c",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ed6fb8b7f5eba7e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1637ef6c9833c703",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "네트워크/README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "69128db5e76a3ab7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "네트워크/README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9534fe1d296d0a54",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d8c33b088b34eea9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "네트워크/README.md"
+              }
+            }
+          },
+          {
+            "id": "3100f6e73bef58ea",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 403.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "workspaces:작업 공간 레이아웃 관리": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "3100f6e73bef58ea",
+  "lastOpenFiles": [
+    "네트워크/images/OSI7OSI4.png",
+    "네트워크/OSI 7계층.md",
+    "images/image..md",
+    "네트워크/images/acx7100-48l-hero-1.avif",
+    "images",
+    "네트워크/images/image.png",
+    "네트워크/images/스크린샷 2024-10-26 21.40.30.png",
+    "네트워크/images/12981677_1.jpg",
+    "네트워크/images/84f3260955f165d71dcf181c801edc4f.jpg",
+    "네트워크/README.md",
+    "네트워크/스크린샷 2024-10-26 20.29.35.png",
+    "네트워크/images/스크린샷 2024-10-26 20.29.35.png",
+    "GraphQL/README.md",
+    "GraphQL",
+    "네트워크/images/스크린샷 2024-10-11 18.55.35.png",
+    "네트워크/images",
+    "정처기/언어/C언어.md",
+    "네트워크",
+    "곽선아_이력서_프론트엔드_v1.0.2 복사본.pdf",
+    "무제 파일.md",
+    "정처기/언어/README.md",
+    "error/README.md",
+    "error/images/스크린샷 2024-09-27 21.41.34.png",
+    "Tags"
+  ]
+}
